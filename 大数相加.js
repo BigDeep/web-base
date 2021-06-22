@@ -15,3 +15,7 @@ export const bigAdd = function(numA,numB){
      }
      return sum;
 }
+
+export const vivi = function(){
+    
+}
