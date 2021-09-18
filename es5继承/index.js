@@ -148,7 +148,31 @@ inherit(Parent,Child);
 
 
 
+class A {
+    constructor(id,name){
+        this.id = id;
+        this.name = name
 
+    }
+}
+// 静态方法
+A.staticFunction = function(){
+    console.log('我是静态方法')
+}
+A.staticVar = 1;
+
+//等价于 typescript
+
+class A {
+    static staticFunction:function = function(): void{
+        console.log('我是静态方法')
+    }
+    static staticVar:number = 1
+    constructor(id: number , name:string){
+        this.id = id;
+        this.name = name;
+    }
+}
 
 
 
